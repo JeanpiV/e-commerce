@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "deatils",
+  "info": {
+    "singularName": "deatil",
+    "pluralName": "deatils",
+    "displayName": "detail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "price": {
+      "type": "decimal"
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "deatil"
+    }
+  }
+}
