@@ -1,0 +1,16 @@
+:root{
+    --bg-white-smoke-color: #fbfbfb;
+    --bg-active-color: #f4f4f5;
+    --color-border: #f1f1f3;
+}
+body{
+    background:#ffffff;
+}
+.cabecera{
+    background-color: var(--bg-white-smoke-color);
+    border: #f1f1f3 1px solid;
+}
+
+aside{
+    background: var(--bg-active-color);
+}
