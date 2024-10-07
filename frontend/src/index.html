@@ -1,27 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiendaOnline - Tu Ecommerce de Confianza</title>
     <link href="./output.css" rel="stylesheet">
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    <header class="">
-      <img src="" alt="" />
-      <h2>E-ccomerce</h2>
-      <input type="serch" />
-      <i class="bi bi-search"></i>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+
+<body class="flex flex-col min-h-screen bg-background">
+
+    <!--EMCABEZADO-->
+
+    <header class="sticky top-0 z-50 w-full border-b bg-background-white bg-opacity-95 backdrop-blur supports-[backdrop-filter]:bg-background-white/60 flex">
+        <div class="container mx-auto flex h-14 items-center px-3">
+            <div class="mr-4 hidden md:flex">
+                <a class="mr-6 flex items-center space-x-2" href="#">
+                    <i class="fas fa-shopping-cart text-2xl text-primary "></i>
+                    <span class="hidden font-bold sm:inline-block text-text">TiendaOnline</span>
+                </a>
+                <nav class="flex items-center space-x-6 text-sm font-medium">
+                    <a class="transition-colors hover:text-primary text-text-muted" href="#">Inicio</a>
+                    <a class="transition-colors hover:text-primary text-text-muted" href="#">Productos</a>
+                    <a class="transition-colors hover:text-primary text-text-muted" href="#">Ofertas</a>
+                    <a class="transition-colors hover:text-primary text-text-muted" href="#">Contacto</a>
+                </nav>
+            </div>
+            <button class="md:hidden p-2 rounded-md text-text">
+                <i class="fas fa-bars"></i>
+                <span class="sr-only">Toggle Menu</span>
+            </button>
+            <div class="flex flex-1 items-center justify-end space-x-2">
+                <nav class="relative">
+                    <input
+                        class="w-full md:w-[300px] pl-8 pr-4 py-2 text-sm text-text bg-background rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                        placeholder="Buscar productos..."
+                        type="search"
+                    />
+                    <i class="fas fa-search absolute left-2.5 top-3 text-text-muted"></i>
+                </nav>
+                <button class="bg-background p-2 rounded-md text-text relative">
+                    <i class="fas fa-shopping-cart text-2xl"></i>
+                    <span class="sr-only">Carrito</span>
+                    <span class="absolute -top-2 -right-2 bg-accent text-background-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                </button>
+            </div>
+        </div>
     </header>
-    <main>
-      <aside>aside del main</aside>
-      <section>section del cuerpo</section>
+
+    <!--CUERPO-->
+
+    <main class="flex-1">
+        <section class="w-full py-12 md:py-24 lg:py-32 bg-[url('https://placehold.co/1200x400')] bg-cover bg-center mx-auto">
+            <div class="container px-4 md:px-6 m-auto">
+                <div class="flex flex-col items-center space-y-4 text-center">
+                    <div class="space-y-2">
+                        <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-background-white">
+                            Grandes Ofertas en Nuestra Tienda Online
+                        </h1>
+                        <p class="mx-auto max-w-[700px] text-background-white md:text-xl">
+                            Descubre nuestras increíbles ofertas en una amplia gama de productos.
+                        </p>
+                    </div>
+                    <a href="#" class="bg-primary text-background-white hover:bg-primary-dark transition-colors px-6 py-3 rounded-md">Comprar Ahora</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full py-12 md:py-24 lg:py-32 m-auto">
+            <div class="container px-4 md:px-6 grid grid-cols-1 m-auto">
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8 text-text">Nuestras Categorías</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-background-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer ">
+                        <img src="https://placehold.co/300x150" alt="" class="rounded-lg border-gray-400 border shadow-md m-auto text-center">
+                        <h3 class="text-2xl font-semibold mb-2 text-text ">Electrónica</h3>
+                        <p class="text-text-muted ">Explora nuestra selección de electrónica</p>
+                    </div>
+                    <div class="bg-background-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+                        <img src="https://placehold.co/300x150" alt="" class="rounded-lg border-gray-400 border shadow-md m-auto text-center">
+                        <h3 class="text-2xl font-semibold mb-2 text-text">Ropa</h3>
+                        <p class="text-text-muted">Explora nuestra selección de ropa</p>
+                    </div>
+                    <div class="bg-background-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+                        <img src="https://placehold.co/300x150" alt="" class="rounded-lg border-gray-400 border shadow-md m-auto text-center">
+                        <h3 class="text-2xl font-semibold mb-2 text-text">Hogar</h3>
+                        <p class="text-text-muted">Explora nuestra selección de hogar</p>
+                    </div>
+                    <div class="bg-background-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+                        <img src="https://placehold.co/300x150" alt="" class="rounded-lg border-gray-400 border shadow-md m-auto text-center">
+                        <h3 class="text-2xl font-semibold mb-2 text-text">Deportes</h3>
+                        <p class="text-text-muted">Explora nuestra selección de deportes</p>
+                    </div>
+                    <div class="bg-background-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+                        <img src="https://placehold.co/300x150" alt="" class="rounded-lg border-gray-400 border shadow-md m-auto text-center">
+                        <h3 class="text-2xl font-semibold mb-2 text-text">Belleza</h3>
+                        <p class="text-text-muted">Explora nuestra selección de belleza</p>
+                    </div>
+                    <div class="bg-background-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+                        <img src="https://placehold.co/300x150" alt="" class="rounded-lg border-gray-400 border shadow-md m-auto text-center">
+                        <h3 class="text-2xl font-semibold mb-2 text-text">Juguetes</h3>
+                        <p class="text-text-muted">Explora nuestra selección de juguetes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full py-12 md:py-24 lg:py-32 bg-background">
+            <div class="container px-4 md:px-6 m-auto">
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8 text-text">Productos Destacados</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="bg-background-white rounded-lg shadow-md overflow-hidden">
+                        <img src="https://placehold.co/200x200" alt="Producto 1" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2 text-text">Producto 1</h3>
+                            <p class="text-text-muted mb-4">Descripción breve del producto 1</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold text-accent">$99.99</span>
+                                <button class="bg-primary text-background-white px-3 py-1 text-sm rounded-full hover:bg-primary-dark transition-colors">
+                                    Añadir al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-background-white rounded-lg shadow-md overflow-hidden">
+                        <img src="https://placehold.co/200x200" alt="Producto 2" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2 text-text">Producto 2</h3>
+                            <p class="text-text-muted mb-4">Descripción breve del producto 2</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold text-accent">$149.99</span>
+                                <button class="bg-primary text-background-white px-3 py-1 text-sm rounded-full hover:bg-primary-dark transition-colors">
+                                    Añadir al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-background-white rounded-lg shadow-md overflow-hidden">
+                        <img src="https://placehold.co/200x200" alt="Producto 3" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2 text-text">Producto 3</h3>
+                            <p class="text-text-muted mb-4">Descripción breve del producto 3</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold text-accent">$79.99</span>
+                                <button class="bg-primary text-background-white px-3 py-1 text-sm rounded-full hover:bg-primary-dark transition-colors">
+                                    Añadir al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-background-white rounded-lg shadow-md overflow-hidden">
+                        <img src="https://placehold.co/200x200" alt="Producto 4" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2 text-text">Producto 4</h3>
+                            <p class="text-text-muted mb-4">Descripción breve del producto 4</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold text-accent">$129.99</span>
+                                <button class="bg-primary text-background-white px-3 py-1 text-sm rounded-full hover:bg-primary-dark transition-colors">
+                                    Añadir al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full py-12 md:py-24 lg:py-32 bg-primary text-background-white">
+            <div class="container px-4 md:px-6 mx-auto">
+                <div class="flex flex-col items-center space-y-4 text-center">
+                    <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Oferta Especial</h2>
+                    <p class="mx-auto max-w-[600px] text-background-white/90 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                        ¡50% de descuento en todos los productos de verano! Oferta por tiempo limitado.
+                    </p>
+                    <a href="#" class="bg-background-white text-primary hover:bg-background transition-colors px-6 py-3 rounded-md">Ver Ofertas</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full py-12 md:py-24 lg:py-32">
+            <div class="container px-4 md:px-6 m-auto">
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8 text-text">Lo Que Dicen Nuestros Clientes</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-background-white p-6 rounded-lg shadow-md">
+                        <div class="flex mb-4">
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                        </div>
+                        <p class="text-text-muted mb-4">
+                            "Excelente servicio y productos de alta calidad. Totalmente recomendado."
+                        </p>
+                        <p class="font-semibold text-text">Cliente Satisfecho 1</p>
+                    </div>
+                    <div class="bg-background-white p-6 rounded-lg shadow-md">
+                        <div class="flex mb-4">
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                        </div>
+                        <p class="text-text-muted mb-4">
+                            "Increíble variedad de productos y pre
+
+cios muy competitivos. ¡Volveré a comprar!"
+                        </p>
+                        <p class="font-semibold text-text">Cliente Satisfecho 2</p>
+                    </div>
+                    <div class="bg-background-white p-6 rounded-lg shadow-md">
+                        <div class="flex mb-4">
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                        </div>
+                        <p class="text-text-muted mb-4">
+                            "Envío rápido y atención al cliente excepcional. ¡Muy satisfecho con mi compra!"
+                        </p>
+                        <p class="font-semibold">Cliente Satisfecho 3</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer></footer>
-    <script src="./index.js"></script>
-  </body>
+
+<!--FOOTER-->
+
+    <footer class="w-full py-6
+    bg-background-footer  text-background-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">Acerca de Nosotros</h3>
+                    <p class="text-sm">Somos tu tienda online de confianza, ofreciendo los mejores productos a precios increíbles.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">Enlaces Rápidos</h3>
+                    <ul class="text-sm space-y-1">
+                        <li><a href="#" class="underline hover:text-primary">Política de Privacidad</a></li>
+                        <li><a href="#" class="underline hover:text-primary">Términos y Condiciones</a></li>
+                        <li><a href="#" class="underline hover:text-primary">Preguntas Frecuentes</a></li>
+                        <li><a href="#" class="underline hover:text-primary">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">Suscríbete</h3>
+                    <p class="text-sm mb-2">Recibe nuestras últimas ofertas y novedades.</p>
+                    <form class="flex space-x-2">
+                        <input type="email" placeholder="Tu email" class="w-full max-w-[300px] px-3 py-2 text-text bg-background-white rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                        <button type="submit" class="bg-primary text-background-white px-4 py-2 rounded hover:bg-primary-dark transition-colors">Suscribir</button>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-sm">
+                © 2023 TiendaOnline. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+</body>
 </html>

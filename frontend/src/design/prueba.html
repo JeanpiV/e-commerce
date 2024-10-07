@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiendaOnline - Tu Ecommerce de Confianza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="flex flex-col min-h-screen">
+    <!--EMCABEZADO-->
+    <header class="sticky top-0 z-50 w-full border-b bg-white bg-opacity-95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+        <div class="container mx-auto flex h-14 items-center px-4">
+            <div class="mr-4 hidden md:flex">
+                <a class="mr-6 flex items-center space-x-2" href="#">
+                    <i class="fas fa-shopping-cart text-2xl"></i>
+                    <span class="hidden font-bold sm:inline-block">TiendaOnline</span>
+                </a>
+                <nav class="flex items-center space-x-6 text-sm font-medium">
+                    <a class="transition-colors hover:text-gray-900 text-gray-600" href="#">Inicio</a>
+                    <a class="transition-colors hover:text-gray-900 text-gray-600" href="#">Productos</a>
+                    <a class="transition-colors hover:text-gray-900 text-gray-600" href="#">Ofertas</a>
+                    <a class="transition-colors hover:text-gray-900 text-gray-600" href="#">Contacto</a>
+                </nav>
+            </div>
+            <button class="md:hidden bg-gray-200 p-2 rounded-md">
+                <i class="fas fa-bars"></i>
+                <span class="sr-only">Toggle Menu</span>
+            </button>
+            <div class="flex flex-1 items-center justify-end space-x-2">
+                <div class="relative">
+                    <input
+                        class="w-full md:w-[300px] pl-8 pr-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        placeholder="Buscar productos..."
+                        type="search"
+                    />
+                    <i class="fas fa-search absolute left-2.5 top-3 text-gray-400"></i>
+                </div>
+                <button class="relative bg-gray-200 p-2 rounded-md">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="sr-only">Carrito</span>
+                    <span class="absolute -top-2 -right-2 h-5 w-5 rounded-full bg-red-500 text-white text-xs flex items-center justify-center">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!--CUERPO-->
+    <main class="flex-1">
+        <section class="w-full py-12 md:py-24 lg:py-32 bg-[url('https://placehold.co/1200x400')] bg-cover bg-center">
+            <div class="container mx-auto px-4 md:px-6">
+                <div class="flex flex-col items-center space-y-4 text-center">
+                    <div class="space-y-2">
+                        <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-white">
+                            Grandes Ofertas en Nuestra Tienda Online
+                        </h1>
+                        <p class="mx-auto max-w-[700px] text-white md:text-xl">
+                            Descubre nuestras increíbles ofertas en una amplia gama de productos.
+                        </p>
+                    </div>
+                    <a href="#" class="bg-white text-black hover:bg-gray-200 px-6 py-3 rounded-md font-semibold transition-colors">Comprar Ahora</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full py-12 md:py-24 lg:py-32">
+            <div class="container mx-auto px-4 md:px-6">
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8">Nuestras Categorías</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+                        <h3 class="text-2xl font-semibold mb-2">Electrónica</h3>
+                        <p class="text-gray-600">Explora nuestra selección de electrónica</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+                        <h3 class="text-2xl font-semibold mb-2">Ropa</h3>
+                        <p class="text-gray-600">Explora nuestra selección de ropa</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+                        <h3 class="text-2xl font-semibold mb-2">Hogar</h3>
+                        <p class="text-gray-600">Explora nuestra selección de hogar</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+                        <h3 class="text-2xl font-semibold mb-2">Deportes</h3>
+                        <p class="text-gray-600">Explora nuestra selección de deportes</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+                        <h3 class="text-2xl font-semibold mb-2">Belleza</h3>
+                        <p class="text-gray-600">Explora nuestra selección de belleza</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+                        <h3 class="text-2xl font-semibold mb-2">Juguetes</h3>
+                        <p class="text-gray-600">Explora nuestra selección de juguetes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
+            <div class="container mx-auto px-4 md:px-6">
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8">Productos Destacados</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+                        <img src="https://placehold.co/300x200" alt="Producto 1" class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2">Producto 1</h3>
+                            <p class="text-gray-600 mb-4">Descripción breve del producto 1</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold">$99.99</span>
+                                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">Añadir al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+                        <img src="https://placehold.co/300x200" alt="Producto 2" class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2">Producto 2</h3>
+                            <p class="text-gray-600 mb-4">Descripción breve del producto 2</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold">$79.99</span>
+                                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">Añadir al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+                        <img src="https://placehold.co/300x200" alt="Producto 3" class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2">Producto 3</h3>
+                            <p class="text-gray-600 mb-4">Descripción breve del producto 3</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold">$129.99</span>
+                                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">Añadir al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+                        <img src="https://placehold.co/300x200" alt="Producto 4" class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2">Producto 4</h3>
+                            <p class="text-gray-600 mb-4">Descripción breve del producto 4</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold">$149.99</span>
+                                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">Añadir al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full py-12 md:py-24 lg:py-32 bg-blue-600 text-white">
+            <div class="container mx-auto px-4 md:px-6">
+                <div class="flex flex-col items-center space-y-4 text-center">
+                    <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Oferta Especial</h2>
+                    <p class="mx-auto max-w-[600px] text-xl">
+                        ¡50% de descuento en todos los productos de verano! Oferta por tiempo limitado.
+                    </p>
+                    <a href="#" class="bg-white text-blue-600 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors">Ver Ofertas</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full py-12 md:py-24 lg:py-32">
+            <div class="container mx-auto px-4 md:px-6">
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8">Lo Que Dicen Nuestros Clientes</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex mb-4">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            "Excelente servicio y productos de alta calidad. Totalmente recomendado."
+                        </p>
+                        <p class="font-semibold">Cliente Satisfecho 1</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex mb-4">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            "Increíble variedad de productos y precios muy competitivos. ¡Volveré a comprar!"
+                        </p>
+                        <p class="font-semibold">Cliente Satisfecho 2</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex mb-4">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            "Envío rápido y atención al cliente excepcional. ¡Muy satisfecho con mi compra!"
+                        </p>
+                        <p class="font-semibold">Cliente Satisfecho 3</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+
+    <footer class="w-full py-6 bg-gray-800 text-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">Acerca de Nosotros</h3>
+                    <p class="text-sm">Somos tu tienda online de confianza, ofreciendo los mejores productos a precios increíbles.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">Enlaces Rápidos</h3>
+                    <ul class="text-sm space-y-1">
+                        <li><a href="#" class="hover:underline">Política de Privacidad</a></li>
+                        <li><a href="#" class="hover:underline">Términos y Condiciones</a></li>
+                        <li><a href="#" class="hover:underline">Preguntas Frecuentes</a></li>
+                        <li><a href="#" class="hover:underline">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">Suscríbete</h3>
+                    <p class="text-sm mb-2">Recibe nuestras últimas ofertas y novedades.</p>
+                    <form class="flex space-x-2">
+                        <input type="email" placeholder="Tu email" class="w-full max-w-[300px] px-3 py-2 text-black rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">Suscribir</button>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-sm">
+                © 2023 TiendaOnline. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -8,7 +8,8 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "deploy": "strapi deploy"
+    "deploy": "strapi deploy",
+    "tailwind": "npx tailwindcss -i ./frontend/src/input.css -o ./frontend/src/output.css --watch"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.10"

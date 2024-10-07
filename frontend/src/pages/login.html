@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - TiendaOnline</title>
+    <link rel="stylesheet" href="../output.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="flex flex-col min-h-screen bg-background">
+    <header class="sticky top-0 z-50 w-full border-b bg-background-white bg-opacity-95 backdrop-blur supports-[backdrop-filter]:bg-background-white/60">
+        <div class="container mx-auto flex h-14 items-center px-4">
+            <div class="mr-4 flex">
+                <a class="mr-6 flex items-center space-x-2" href="index.html">
+                    <i class="fas fa-shopping-cart text-2xl text-primary"></i>
+                    <span class="hidden font-bold sm:inline-block text-text-DEFAULT">TiendaOnline</span>
+                </a>
+            </div>
+            <nav class="flex-1 flex items-center justify-end space-x-4 text-sm font-medium">
+                <a class="transition-colors hover:text-primary text-text-muted" href="index.html">Inicio</a>
+                <a class="transition-colors hover:text-primary text-text-muted" href="#">Productos</a>
+                <a class="transition-colors hover:text-primary text-text-muted" href="#">Ofertas</a>
+                <a class="transition-colors hover:text-primary text-text-muted" href="#">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-1 flex items-center justify-center px-4 py-12">
+        <div class="w-full max-w-md">
+            <div class="bg-background-white shadow-md rounded-lg px-8 py-10">
+                <h2 class="text-3xl font-bold text-center mb-6 text-text-DEFAULT">Iniciar Sesión</h2>
+                <form>
+                    <div class="mb-4">
+                        <label for="email" class="block text-text-DEFAULT text-sm font-bold mb-2">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-text-muted rounded-md focus:outline-none focus:ring-2 focus:ring-primary" placeholder="tu@email.com" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="password" class="block text-text-DEFAULT text-sm font-bold mb-2">Contraseña</label>
+                        <input type="password" id="password" name="password" class="w-full px-3 py-2 border border-text-muted rounded-md focus:outline-none focus:ring-2 focus:ring-primary" placeholder="••••••••" required>
+                    </div>
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="remember" name="remember" class="h-4 w-4 text-primary focus:ring-primary border-text-muted rounded">
+                            <label for="remember" class="ml-2 block text-sm text-text-muted">Recordarme</label>
+                        </div>
+                        <a href="#" class="text-sm text-primary hover:underline">¿Olvidaste tu contraseña?</a>
+                    </div>
+                    <button type="submit" class="w-full bg-primary text-background-white font-bold py-2 px-4 rounded-md hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 transition-colors">
+                        Iniciar Sesión
+                    </button>
+                </form>
+                <div class="mt-6 text-center">
+                    <p class="text-sm text-text-muted">
+                        ¿No tienes una cuenta? <a href="#" class="text-primary hover:underline">Regístrate aquí</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-full py-6 bg-background-footer text-background-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">Acerca de Nosotros</h3>
+                    <p class="text-sm">Somos tu tienda online de confianza, ofreciendo los mejores productos a precios increíbles.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">Enlaces Rápidos</h3>
+                    <ul class="text-sm space-y-1">
+                        <li><a href="#" class="underline hover:text-primary">Política de Privacidad</a></li>
+                        <li><a href="#" class="underline hover:text-primary">Términos y Condiciones</a></li>
+                        <li><a href="#" class="underline hover:text-primary">Preguntas Frecuentes</a></li>
+                        <li><a href="#" class="underline hover:text-primary">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">Suscríbete</h3>
+                    <p class="text-sm mb-2">Recibe nuestras últimas ofertas y novedades.</p>
+                    <form class="flex space-x-2">
+                        <input type="email" placeholder="Tu email" class="w-full max-w-[300px] px-3 py-2 text-text-DEFAULT bg-background-white rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                        <button type="submit" class="bg-primary text-background-white px-4 py-2 rounded hover:bg-primary-dark transition-colors">Suscribir</button>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-sm">
+                © 2023 TiendaOnline. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
