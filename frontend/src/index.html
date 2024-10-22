@@ -18,7 +18,7 @@
             <div class="mr-4 hidden md:flex">
                 <a class="mr-6 flex items-center space-x-2" href="#">
                     <i class="fas fa-shopping-cart text-2xl text-primary "></i>
-                    <span class="hidden font-bold sm:inline-block text-text">TiendaOnline</span>
+                    <span class="hidden font-bold sm:inline-block text-text" id="title">TiendaOnline</span>
                 </a>
                 <nav class="flex items-center space-x-6 text-sm font-medium">
                     <a class="transition-colors hover:text-primary text-text-muted" href="#">Inicio</a>
@@ -55,7 +55,7 @@
         <section class="w-full py-12 md:py-24 lg:py-32 bg-[url('https://placehold.co/1200x400')] bg-cover bg-center mx-auto">
             <div class="container px-4 md:px-6 m-auto">
                 <div class="flex flex-col items-center space-y-4 text-center">
-                    <div class="space-y-2">
+                    <div class="space-y-2" id="description">
                         <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-background-white">
                             Grandes Ofertas en Nuestra Tienda Online
                         </h1>
@@ -261,5 +261,6 @@ cios muy competitivos. ¡Volveré a comprar!"
             </div>
         </div>
     </footer>
+    <script type="module" src="components/renderLanding.js"></script>
 </body>
 </html>

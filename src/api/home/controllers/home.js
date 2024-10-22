@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * deatil controller
+ * home controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::deatil.deatil');
+module.exports = createCoreController('api::home.home');
